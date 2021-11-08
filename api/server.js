@@ -16,7 +16,7 @@ app.listen(5000,() => {
 });
 //mongoose connection
 
-mongoose.connect("mongodb+srv://test:test123@cluster0.jlqcd.mongodb.net/books?retryWrites=true&w=majority", {
+mongoose.connect("yourmongodburl", {
     useNewUrlParser: true, 
     useUnifiedTopology : true, 
     }).then(console.log("Connected to Database")).catch((err) => console.log(err));
